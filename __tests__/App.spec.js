@@ -83,11 +83,11 @@ test('it works', async () => {
   const button = getByRole('button');
 
   fireEvent.press(button);
-  await myWaitFor(() => getByText(/Value is 1/i));
+  await waitFor(() => getByText(/Value is 1/i));
 
   //If I comment out these lines and no error message will be logged
   fireEvent.press(button);
-  await myWaitFor(() => getByText(/Value is 2/i));
+  await waitFor(() => getByText(/Value is 2/i));
 
   // If I uncomment these lines and two error messages will be logged
   // fireEvent.press(button);
