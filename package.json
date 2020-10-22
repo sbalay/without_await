@@ -26,8 +26,10 @@
     "react-test-renderer": "16.13.1"
   },
   "jest": {
-    "preset": "react-native",
-    "setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"],
+    "preset": "./jest-preset.js",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ],
     "testMatch": [
       "**/__tests__/**/?(*.)+(spec).js?(x)"
     ]
